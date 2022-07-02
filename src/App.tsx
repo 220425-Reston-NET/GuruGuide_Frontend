@@ -3,7 +3,9 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Nav from './Components/NavBar';
 import Home from './Routes/home/home';
-import Welcome from './Routes/login/login';
+import Register from './Routes/register/register';
+import Login from './Routes/login/login';
+import Appointments from './Routes/appointments/Appointments';
 
 function App() {
   return (
@@ -12,13 +14,10 @@ function App() {
  <>
  <Nav />
  <Routes>
-   <Route path='/appointments' element={<Home/>}/>
+   <Route path='/appointments' element={<Appointments/>}/>
    <Route path='/' element={<Home/>}/>
-   <Route path='/welcome' element={<Welcome/>}/>
-   <Route path='/register' element={<Home/>}/>
-   <Route path='/searchgroomers' element={<Home/>}/>
-   <Route path='/services' element={<Home/>}/>
-   <Route path='/confrimed' element={<Home/>}/>
+   <Route path='/login' element={<Login/>}/>
+   <Route path='/register' element={<Register/>}/>
 
  </Routes>
     </>

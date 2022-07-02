@@ -1,13 +1,12 @@
 import React from 'react'
 import "./home.css";
+
 function Home() {
   return (
   <div>
     <header>
     <h1>Guru Guide</h1>
     </header>
-    
-    <div id ="home" className="home"></div>
     
     <h2>About us</h2>
     <h3>​COME DIRTY LEAVE HAP​PY</h3>

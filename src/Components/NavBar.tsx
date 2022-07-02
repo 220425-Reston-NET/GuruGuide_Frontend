@@ -18,14 +18,14 @@ function Nav() {
                       <Link to="/register" className="nav-link">Register</Link>
                       </li>
                       <li className="nav-item">
-                      <Link to="/welcome" className="nav-link">Login</Link>
+                      <Link to="/login" className="nav-link">Login</Link>
                       </li>
                       <li className="nav-item">
                       <Link to="/Services" className="nav-link">Services</Link>
                       </li>
-                      <li className="nav-item">
+                      {/* <li className="nav-item">
                       <Link to="/Searchgroomers" className="nav-link">Customer Appointment Form</Link>
-                      </li>
+                      </li> */}
                       <li className="nav-item">
                       <Link to="/appointments" className="nav-link">Appointments</Link>
                       </li>

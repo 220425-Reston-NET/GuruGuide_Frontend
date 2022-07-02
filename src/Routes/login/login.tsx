@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { CustomerModels } from '../../Models/registerCustomers';
 import { isArrowFunction } from 'typescript';
 
-function Welcome(){
+function Login(){
 
     const navigate = useNavigate();
 
@@ -42,7 +42,7 @@ function Welcome(){
           e.preventDefault();
       
           await fetch(
-            "http://mobilepetgroomersapi-env.eba-irrbazjk.us-east-1.elasticbeanstalk.com/api/Customer/SearchCustomerByName?" + new URLSearchParams({
+            "#" + new URLSearchParams({
                 custName: userName,
                 custPassword: userPassword
               })
@@ -99,4 +99,4 @@ function Welcome(){
     )//end of return
     
 }
-export default Welcome
+export default Login
