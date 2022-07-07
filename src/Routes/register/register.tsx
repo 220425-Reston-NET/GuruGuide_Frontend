@@ -90,28 +90,28 @@ function CreateCustomer() {
         return (
         <>
           <div>
-          <h1>Registion for the Coach</h1>
+          <h1>Registion for the Customer </h1>
           <h2>Please Enter The Infomation Below </h2>
           </div>
         
         <form className='createcustomer-container' onSubmit={onSubmit}>
             
             <div className="form-group col-md-4 ">
-                <label htmlFor="inputName">Name</label>
+                <label htmlFor="inputName">UserName</label>
                 <div>
                     <input type="text" className="form-control" id="inputName" placeholder="John Doe" onChange={insertName} />
                 </div>
             </div>
             
             <div className="form-group col-md-4 ">
-                <label htmlFor="inputPhoneNumber">Password</label>
+                <label htmlFor="inputPhoneNumber">Email</label>
                 <div>
                     <input type="text" className="form-control" id="inputPassword" placeholder="1234567890" onChange={insertPassword} />
                 </div>
             </div>
             
             <div className="form-group col-md-4">
-                <label htmlFor="inputAddress">FirstName</label>
+                <label htmlFor="inputAddress">First Name</label>
                 <input type="text" className="form-control" id="inputFirstName" placeholder="1234 Main St" onChange={insertFirstName} />
             </div>
 
@@ -121,23 +121,11 @@ function CreateCustomer() {
                     <input type="text" className="form-control" id="inputLastName" placeholder="1" onChange={insertLastName} />
                 </div>
                 
-                <label htmlFor="inputConfirmID">Address</label>
+                <label htmlFor="inputConfirmID">Password</label>
                 <div>
                     <input type="text" className="form-control" id="inputAddress" placeholder="1" onChange={insertAddress} />
                 </div>
-
-                <label htmlFor="inputConfirmID">City</label>
-                <div>
-                    <input type="text" className="form-control" id="inputCity" placeholder="1" onChange={insertCity} />
-                </div>
-
-                <label htmlFor="inputConfirmID">State</label>
-                <div>
-                    <input type="text" className="form-control" id="inputState" placeholder="1" onChange={insertState} />
-                </div>
-                
-                
-                
+                            
                 <div className="col-12 createcustomer-container">
                     <button type="submit" className="btn btn-primary"><div>Create Account</div></button>
                 </div>

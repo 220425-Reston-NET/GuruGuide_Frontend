@@ -1,47 +1,82 @@
 import React from 'react'
 import "./home.css";
+import "./jscript";
+import "./jscript2"
 
 function Home() {
-  return (
-  <div>
-    <header>
-    <h1>Guru Guide</h1>
-    </header>
-    
-    <h2>About us</h2>
-    <h3>​COME DIRTY LEAVE HAP​PY</h3>
-    <p>From start to finish, your pet will be in the care of his/her one dedicated groomer in a clean and aromatherapy, infused salon to make your pet's visit with us as positive and enjoyable as possible.</p>
-
-    
-    <h2>Our Hours Are</h2>
-    <ol>
-        <li>MONDAY: 10:00 AM - 6:00 PM</li>
-        <li>TUESDAY: 10:00 AM - 6:00 PM</li> 
-        <li>WEDNESDAY: 10:00 AM - 6:00 PM </li>
-        <li>THURSDAY: 10:00 AM - 6:00 PM</li>
-        <li>FRIDAY: 10:00 AM - 6:00 PM</li> 
-        <li>SATURDAY: 10:00 AM - 2:00 PM</li> 
-        <li>SUNDAY: CLOSED</li>
-    </ol>
   
-    <h2>Our Serivces Include</h2>
-    <ol>
-    <li> No wire cages or metal cage banks ever used; not even during drying times after baths.</li>
-    <li> Private and relaxing suites that accommodates all breed sizes or multiple pets in home. </li>
-    <li> Services are by an appointment to appointment basis.</li>
-    <li> Our grooming staff consists of all woman who are highly skilled in their field, been taught at reputable grooming schools and perform services with gentle and caring handling.</li>
-    <li> Walks in welcomed for nail clippings, gland expression and bubble baths</li>
-    <li> All natural products used; even during flea dips.</li>
-    <li> Your pet's grooming service is performed from start to finish by one dedicated and skilled groomer for whom your pet can bond with.</li>
-    <li> Each client is thoroughly checked for parasites, lumps, skin tags, rashes, etc. and reported back to you at pick up.</li>
-    <li> Special needs or requests welcomed.</li>
-    <li> Customer loyalty program</li>
-    </ol>
-    
+  function reveal2() {
+    var reveals = document.querySelectorAll(".reveal2");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible =0;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active2");
+      } else {
+        reveals[i].classList.remove("active2");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal2);
+
+  function reveal3() {
+    var reveals = document.querySelectorAll(".reveal3");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible =0;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active3");
+      } else {
+        reveals[i].classList.remove("active3");
+      }
+    }
+  }
+  window.addEventListener("scroll", reveal3);
+
+  
+
+  const test = () =>
+  {
+    window.scrollTo(0,1000)
+  }
+
+
+  
+  return (
+    <div>
+    <div className='column-layout'>
+        <div className='left-side-container'>
+            <p className='text-container'> Welcome To Guru Guide </p>
+        </div>
+        <div className="img-container">
+        <a href="https://cdn.discordapp.com/attachments/970755382215606282/994449671181324318/Greetings_From_Guru_Guide.png"><img src="https://cdn.discordapp.com/attachments/970755382215606282/994449671181324318/Greetings_From_Guru_Guide.png" title="source: imgur.com" /></a>
+        </div>
+        <div className='right-side-container'>
+        </div>
+    </div>
+    <div className='bottom-container'>
+        <button type="button" className="btn btn-outline-primary btn-lg" onClick={test} style={{margin: 'auto'}}>About Us</button>
+        <button type="button" className="btn btn-outline-success btn-lg" style={{margin: 'auto'}}>Im in Need of Guru Guidance</button>
+        <button type="button" className="btn btn-outline-warning btn-lg" style={{margin: 'auto'}}>Im a New Guru</button>
+        {/* <button type="button" className="btn btn-outline-info btn-lg" style={{margin: 'auto'}}>Trends</button> */}
+    </div>
+
+<div className="content">   
+<div className="textBody">
+    <div className="section1 reveal2" id="about">
+        <h2>What is GuruGuide </h2>
+        <div className="blueBar"></div>
+        <p>Test</p>
+        <button style={{color: 'rgb(4, 189, 189)', borderColor: 'rgb(4, 189, 189)'}} type="submit" className="btn btn-light btn-lg">Schedule an Appointment</button>
+    </div>
+    {/* <img src="https://i.imgur.com/bY1Rrs8.png" className="sideImage1 reveal3"/> */}
+</div>
+</div>
 </div>
   )
 }
-<h2>Chadel</h2>
 
 
 export default Home
