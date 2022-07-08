@@ -47,33 +47,22 @@ function Home() {
   return (
     <div>
     <div className='column-layout'>
+      <p className='text-container'> Welcome To Guru Guide </p>
         <div className='left-side-container'>
-            <p className='text-container'> Welcome To Guru Guide </p>
+        <a href="https://cdn.discordapp.com/attachments/991749229183778817/994352372841189457/Screen_Shot_2022-07-06_at_4.50.03_PM.png"><img style={{ width: 500 }} src="https://cdn.discordapp.com/attachments/991749229183778817/994352372841189457/Screen_Shot_2022-07-06_at_4.50.03_PM.png" title="source: imgur.com" /></a>
+        <a href="https://cdn.discordapp.com/attachments/991749229183778817/994352372841189457/Screen_Shot_2022-07-06_at_4.50.03_PM.png"><img style={{ width: 500 }} src="https://cdn.discordapp.com/attachments/991749229183778817/994352372841189457/Screen_Shot_2022-07-06_at_4.50.03_PM.png" title="source: imgur.com" /></a>
         </div>
         <div className="img-container">
-        <a href="https://cdn.discordapp.com/attachments/970755382215606282/994449671181324318/Greetings_From_Guru_Guide.png"><img src="https://cdn.discordapp.com/attachments/970755382215606282/994449671181324318/Greetings_From_Guru_Guide.png" title="source: imgur.com" /></a>
         </div>
         <div className='right-side-container'>
         </div>
     </div>
     <div className='bottom-container'>
         <button type="button" className="btn btn-outline-primary btn-lg" onClick={test} style={{margin: 'auto'}}>About Us</button>
-        <button type="button" className="btn btn-outline-success btn-lg" style={{margin: 'auto'}}>Im in Need of Guru Guidance</button>
-        <button type="button" className="btn btn-outline-warning btn-lg" style={{margin: 'auto'}}>Im a New Guru</button>
+        <button type="button" className="btn btn-outline-success btn-lg" style={{margin: 'auto'}}>I'm in Need of Guru Guidance</button>
+        <button type="button" className="btn btn-outline-warning btn-lg" style={{margin: 'auto'}}>I'm a New Guru </button>
         {/* <button type="button" className="btn btn-outline-info btn-lg" style={{margin: 'auto'}}>Trends</button> */}
     </div>
-
-<div className="content">   
-<div className="textBody">
-    <div className="section1 reveal2" id="about">
-        <h2>What is GuruGuide </h2>
-        <div className="blueBar"></div>
-        <p>Test</p>
-        <button style={{color: 'rgb(4, 189, 189)', borderColor: 'rgb(4, 189, 189)'}} type="submit" className="btn btn-light btn-lg">Schedule an Appointment</button>
-    </div>
-    {/* <img src="https://i.imgur.com/bY1Rrs8.png" className="sideImage1 reveal3"/> */}
-</div>
-</div>
 </div>
   )
 }
