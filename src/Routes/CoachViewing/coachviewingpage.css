@@ -1,0 +1,10 @@
+.dropdown{
+    display: flex;
+    margin: 3px;
+}
+
+.btncoach {
+    padding: 2%;
+    flex: 1;
+    margin: 3px;
+}

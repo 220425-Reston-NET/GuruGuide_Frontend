@@ -21,6 +21,7 @@ function Nav() {
                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li><a className="dropdown-item" href="#"><Link to="/login" className="nav-link">Login</Link></a></li>
                             <li><a className="dropdown-item" href="#"><Link to="/register" className="nav-link">Create Account</Link></a></li>
+                            <li><a className="dropdown-item" href="#"><Link to="/coachviewingpage" className="nav-link">Coaches Profiles</Link></a></li>
                             <li><a className="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div>
