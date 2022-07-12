@@ -1,0 +1,54 @@
+.body {
+    border: 2px black solid;
+    width: 75%;
+    height: 18vh;
+    background-color: #ddebc1;
+    display: flex;
+    flex-direction: column;
+    margin-block: 10px;
+    margin-left: 22vw;
+}
+
+.heading {
+    /* border: 1px black solid; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.grow {
+    flex-grow: 2;
+}
+
+.boxborder {
+    border: 1px black soild;
+}
+
+.btn2 {
+    background-color: #522ee0;
+    border-radius: 5px;
+    color:white;
+    font-display: center;
+    padding: 5px;
+}
+
+.name-head {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.name-namehead {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.head {
+    border: inherit;
+    margin: 5px;
+}
+
+.content {
+    border: 1px black solid;
+    height: 75%;
+}
