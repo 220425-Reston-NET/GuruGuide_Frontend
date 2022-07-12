@@ -17,12 +17,14 @@
     
 }
 
-.grow {
-    flex-grow: 2;
+.profile {
+    display: flex;
+    flex-direction: row;
+    margin-block: -34vh;
 }
 
-.boxborder {
-    border: 1px black soild;
+.grow {
+    flex-grow: 2;
 }
 
 .btn2 {
@@ -38,10 +40,6 @@
     font-weight: bold;
 }
 
-.name-namehead {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
 
 .head {
     border: inherit;
@@ -49,6 +47,20 @@
 }
 
 .content {
-    border: 1px black solid;
+    /* border: 1px black solid; */
     height: 75%;
+}
+
+.bordercontent {
+    border: 2px black solid;
+    width: 73%;
+    height: 11vh;
+    margin-left: 18vh;
+    margin-top: -8vh;
+
+}
+
+.profileimg {
+    margin-left: -25vh;
+    margin-top: 10vh;
 }

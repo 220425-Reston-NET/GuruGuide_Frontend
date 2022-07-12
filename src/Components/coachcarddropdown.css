@@ -1,0 +1,18 @@
+.coachbody {
+    border: 2px black solid;
+    width: 94%;
+    height: 13vh;
+    background-color: #8c52ff;
+    display: flex;
+    flex-direction: column;
+    margin-block: 10px;
+    margin-left: 2.7vw;
+}
+
+.container-dropdowncoach {
+
+}
+
+.btn-primary {
+    
+}
