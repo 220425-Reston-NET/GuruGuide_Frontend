@@ -17,14 +17,18 @@
 
 .btn-btn-primary {
     border: 2px black solid;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    align-items: center;
     background-color: black;
-    width: 44%;
+    width: 60%;
     height: 3.5vh;
     display: flex;
     flex-direction: row;
     margin: auto;
     margin-block: 5px;
-    margin-left: 4.0vw;
+    margin-left: 3.0vw;
 }
 
 .flex-container{
@@ -33,13 +37,13 @@
     margin-left: 5px;
 }
 
-.greetings {
-    font-size: 30px;
+/* .greetings {
+    font-size: 20px;
     flex: 1;
     order: 2;
-    margin-top: 30px;
-    margin-right: 70px;
-}
+    margin-top: 10px;
+    margin-right: 100px;
+} */
 
 .search-container{
     flex: 1;
@@ -58,4 +62,8 @@
 
 .dropdown-container{
     display: inline;
+}
+h4 {
+    margin-top: 35px;
+    margin-left: 100px;
 }

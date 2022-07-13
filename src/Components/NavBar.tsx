@@ -1,13 +1,23 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 function Nav() {
+    const navigate=useNavigate()
+    
+    const gotoregister = () => {
+        navigate('/register')}
+    const gotologin = () => {
+        navigate('/login')}
+    const gotoview = () => {
+        navigate('/coachviewingpage')}
+                        
+
     return (
             <nav className="nav-container">
                 
                 <div className='greetings'>
-                    Greetings From Guru Guide !
+                <p className='text-container'> <h4>Greetings From the GuruGuide! </h4></p>
                 </div>
 
                 <div className='search-container'>
@@ -15,9 +25,9 @@ function Nav() {
                 </div>
                 
                 <div className='navbuttons'>
-                    <a className="btn-btn-primary" href="/register" role="button">Sign Up </a>
-                    <a className="btn-btn-primary" href="/login" role="button">Log In </a>
-                    <a className="btn-btn-primary" href="/coachviewingpage" role="button">Find a Coach</a>
+                    <button className="btn-btn-primary" onClick={gotoregister} role="button">Sign Up </button>
+                    <button className="btn-btn-primary" onClick={gotologin} role="button">Log In </button>
+                    <button className="btn-btn-primary" onClick={gotoview} role="button">Find a Coach</button>
                 <form className="d-flex" role="search">
                         <input className="form-control me-4" type="search" placeholder="Search" aria-label="Search" />
                         <button className="btn btn-outline-success" type="submit">Submit</button>
