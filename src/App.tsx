@@ -11,17 +11,15 @@ import Coachviewingpage from './Routes/CoachViewing/coachviewingpage';
 
 function App() {
   return (
-    // const {isAuthenticated} = useAuth0();
-  
  <>
  <Nav />
  <Routes>
-   <Route path='/appointments' element={<Appointments/>}/>
    <Route path='/' element={<Home/>}/>
    <Route path='/login' element={<Login/>}/>
    <Route path='/register' element={<Register/>}/>
    <Route path='/registercoaches' element={<Registercoaches/>}/>
    <Route path='/coachviewingpage' element={<Coachviewingpage/>}/>
+   <Route path='/appointments' element={<Appointments/>}/>
 
  </Routes>
     </>
