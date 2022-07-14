@@ -103,7 +103,7 @@ function CreateCustomer() {
                 <input type="text" className="form-control" id="inputFirstName" placeholder="1234 Main St" onChange={insertLastName} />
             </div>
 
-                <label htmlFor="inputConfirmID">Password</label>
+                <label htmlFor="inputPassword">Password</label>
                 <div>
                     <input type="password" className="form-control" id="inputPassword" placeholder="password" onChange={insertPassword} />
                 </div>
