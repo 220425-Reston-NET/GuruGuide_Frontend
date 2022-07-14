@@ -43,6 +43,7 @@ function Nav() {
                             <li><a className="dropdown-item" href="#"><Link to="/register" className="nav-link">Create Account as Customer</Link></a></li>
                             <li><a className="dropdown-item" href="#"><Link to="/coachviewingpage" className="nav-link">Coaches View</Link></a></li>
                             <li><a className="dropdown-item" href="#"><Link to="/" className="nav-link">Coaches Profile</Link></a></li>
+                            <li><a className="dropdown-item" href="#"><Link to="/Appointments" className="nav-link">Appointments</Link></a></li>
                             <li><a className="dropdown-item" href="#"><Link to="/" className="nav-link">Go Home</Link></a></li>
                             <li><a className="dropdown-item" href="#">Something else here</a></li>
                         </ul>

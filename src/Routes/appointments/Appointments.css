@@ -1,12 +1,12 @@
 h1 {
-    background-color: rgb(112, 190, 243);
+    background-color: #d1f48b;
     font-family:cursive;
     font-size: 70px;
     text-align: center;
 }
 
 h2 {
-    background-color: rgb(112, 190, 243);
+    background-color: #d1f48b;
 }
 
 DatePicker {
