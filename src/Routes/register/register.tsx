@@ -105,7 +105,7 @@ function CreateCustomer() {
 
                 <label htmlFor="inputConfirmID">Password</label>
                 <div>
-                    <input type="text" className="form-control" id="inputPassword" placeholder="1" onChange={insertPassword} />
+                    <input type="password" className="form-control" id="inputPassword" placeholder="password" onChange={insertPassword} />
                 </div>
                             
             <div className="form-group col-md-4">
