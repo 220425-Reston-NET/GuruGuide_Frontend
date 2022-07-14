@@ -6,6 +6,9 @@ h2 {
     text-align: center;
     
 }
+.form-group {
+text-align: center;
+} 
 
 .createcustomer-container {
     margin:auto ;

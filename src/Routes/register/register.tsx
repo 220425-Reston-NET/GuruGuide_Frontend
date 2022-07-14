@@ -102,11 +102,14 @@ function CreateCustomer() {
                 <label htmlFor="inputLastName">Last Name</label>
                 <input type="text" className="form-control" id="inputFirstName" placeholder="1234 Main St" onChange={insertLastName} />
             </div>
-
+            <div className="form-group col-md-4">
                 <label htmlFor="inputPassword">Password</label>
+                <div className="form-floating">
                 <div>
-                    <input type="password" className="form-control" id="inputPassword" placeholder="password" onChange={insertPassword} />
+                    <input type="password" className="form-control" id="floatingPassword" placeholder="password" onChange={insertPassword} />
                 </div>
+                </div>
+            </div>
                             
             <div className="form-group col-md-4">
                 <label htmlFor="inputID">Email</label>
