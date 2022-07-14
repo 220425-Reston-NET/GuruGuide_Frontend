@@ -21,9 +21,13 @@ artifacts:
   files:
     - 'Dockerfile'
     - 'nginx/**/*'
+<<<<<<< HEAD
     - 'build/**/*'
 Footer
 © 2022 GitHub, Inc.
 Footer navigation
 Terms
 P
+=======
+    - 'build/**/*'
+>>>>>>> bb044d8d2c7bd8f840f747f4326cdb72ff8749c6
