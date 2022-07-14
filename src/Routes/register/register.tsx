@@ -8,16 +8,12 @@ import './register.css'
 function CreateCustomer() {
     
 
-    let CustDefault:CustomerModels = { 
-    
-    name : '',
-    password : '',
-    firstname : '',
-    lastname : '',
-    address : '',
-    city : '',
-    state :  '',
-
+    let CustDefault:CustomerModels = {
+        username: '',
+        firstname: '',
+        lastname: '',
+        password: '',
+        email: 'default',
     };
 
     
@@ -25,11 +21,8 @@ function CreateCustomer() {
     const [customer, setcustomer] = useState({} as CustomerModels);
     
 
-    function insertName(e: any) {
-        CustDefault.name = e.target.value;  
-    }
-    function insertPassword(e: any) {
-        CustDefault.password = e.target.value;
+    function insertUserName(e: any) {
+        CustDefault.username = e.target.value;  
     }
     function insertFirstName(e: any) {
         CustDefault.firstname = e.target.value;
@@ -37,20 +30,17 @@ function CreateCustomer() {
     function insertLastName(e: any) {
         CustDefault.lastname = e.target.value;
     }
-    function insertAddress(e: any) {
-        CustDefault.address = e.target.value;
+    function insertPassword(e: any) {
+        CustDefault.password = e.target.value;
     }
-    function insertCity(e: any) {
-        CustDefault.city = e.target.value;
-    }
-    function insertState(e: any) {
-        CustDefault.state = e.target.value;
+    function insertEmail(e: any) {
+        CustDefault.email = e.target.value;
     }
     
      function onSubmit(e: any) {
         e.preventDefault();
         
-         fetch("#", {
+         fetch("http://guruguidebackend-env.eba-aq6pcaxp.us-east-1.elasticbeanstalk.com/api/Customers/AddCustomers", {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -58,13 +48,11 @@ function CreateCustomer() {
             },
             body: JSON.stringify(
                 {
-                    name: custOBJ.name,
-                    password: custOBJ.password,
+                    username: custOBJ.username,
                     firstname: custOBJ.firstname,
                     lastname: custOBJ.lastname,
-                    address: custOBJ.address,
-                    city: custOBJ.city,
-                    state: custOBJ.state,
+                    password: custOBJ.password,
+                    email: custOBJ.email,
                 }
                 )
             
@@ -82,7 +70,7 @@ function CreateCustomer() {
         
         const navigate = useNavigate();
         const goToNewCustInfo = () => {
-            navigate('/services');
+            navigate('/coachviewingpage');
         };
         
 
@@ -97,35 +85,35 @@ function CreateCustomer() {
         <form className='createcustomer-container' onSubmit={onSubmit}>
             
             <div className="form-group col-md-4 ">
-                <label htmlFor="inputName">UserName</label>
+                <label htmlFor="inputUserName">UserName</label>
                 <div>
-                    <input type="text" className="form-control" id="inputName" placeholder="John Doe" onChange={insertName} />
+                    <input type="text" className="form-control" id="inputName" placeholder="John Doe" onChange={insertUserName} />
                 </div>
             </div>
             
             <div className="form-group col-md-4 ">
-                <label htmlFor="inputPhoneNumber">Email</label>
+                <label htmlFor="inputFirstName">Firstname</label>
                 <div>
-                    <input type="text" className="form-control" id="inputPassword" placeholder="1234567890" onChange={insertPassword} />
+                    <input type="text" className="form-control" id="inputPassword" placeholder="1234567890" onChange={insertFirstName} />
                 </div>
             </div>
             
             <div className="form-group col-md-4">
-                <label htmlFor="inputAddress">First Name</label>
-                <input type="text" className="form-control" id="inputFirstName" placeholder="1234 Main St" onChange={insertFirstName} />
+                <label htmlFor="inputLastName">Last Name</label>
+                <input type="text" className="form-control" id="inputFirstName" placeholder="1234 Main St" onChange={insertLastName} />
             </div>
 
-            <div className="form-group col-md-4">
-                <label htmlFor="inputID">Lastname</label>
-                <div>
-                    <input type="text" className="form-control" id="inputLastName" placeholder="1" onChange={insertLastName} />
-                </div>
-                
                 <label htmlFor="inputConfirmID">Password</label>
                 <div>
-                    <input type="text" className="form-control" id="inputAddress" placeholder="1" onChange={insertAddress} />
+                    <input type="text" className="form-control" id="inputPassword" placeholder="1" onChange={insertPassword} />
                 </div>
                             
+            <div className="form-group col-md-4">
+                <label htmlFor="inputID">Email</label>
+                <div>
+                    <input type="text" className="form-control" id="inputLastName" placeholder="1" onChange={insertEmail} />
+                </div>
+                
                 <div className="col-12 createcustomer-container">
                     <button type="submit" className="btn btn-primary"><div>Create Account</div></button>
                 </div>
